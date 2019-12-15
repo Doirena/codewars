@@ -30,8 +30,24 @@ function last(x){
 
 
 
-
-
 test(last('man i need a taxi up to ubud'), ['a', 'need', 'ubud', 'i', 'taxi', 'man', 'to', 'up']);
 test(last('what time are we climbing up the volcano'), ['time', 'are', 'we', 'the', 'climbing', 'volcano', 'up', 'what']); 
 test(last('take me to semynak'), ['take', 'me', 'semynak', 'to']); 
+//kitas metodas
+function last1(x){    
+    const array = x.split(" ");
+var sorted = array.sort(function(a, b) {
+
+    if (a[a.length - 1] > b[b.length - 1])
+        return 1;
+            else if (a[a.length - 1] < b[b.length - 1])
+        return -1;
+
+    return 0;
+
+})
+
+console.log(sorted)
+return array;
+}
+last1('man i need a taxi up to ubud');
