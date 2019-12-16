@@ -7,18 +7,20 @@ function test( t1, t2 ) {
     }
 }
 
-function bonusTime(salary, bonus) {
+// function bonusTime(salary, bonus) {
 
-   if (bonus === true ) {
-       let sum = salary * 10
-      return "\u00A3"+sum;  
-   } else{       
-    return "\u00A3"+salary;
-    }
-}
+//    if (bonus === true ) {
+//        let sum = salary * 10
+//       return "\u00A3"+sum;  
+//    } else{       
+//     return "\u00A3"+salary;
+//     }
+// }
 
 //kitu budu:
-
+function bonusTime(salary, bonus) {
+    return bonus ?  "\u00A3"+ 10 * salary :  "\u00A3"+salary;
+  }
 test(bonusTime(10000, true), '£100000');
 test(bonusTime(25000, true), '£250000');
 test(bonusTime(10000, false), '£10000');
