@@ -12,6 +12,7 @@ function doMath(s){
   
     let num=[];
     let lett=[];
+    //sudarome numeriu sarasa
     for (let i = 0; i < s.length; i++) {
         const element = s[i];
         const ele= parseInt(element);       
@@ -19,6 +20,7 @@ function doMath(s){
             num.push(element);
         }
     }
+    //sudarome radziu sarasa
     let nums =num.join('').split(' ');
     for (let i = 0; i < s.length; i++) {
         const element = s[i];
@@ -70,7 +72,7 @@ function doMath(s){
 console.log(lett);
 console.log(nums);
 let math = ["+", "-", "*","/","+", "-", "*","/","+", "-", "*","/","+", "-", "*","/","+", "-", "*","/","+", "-", "*","/","+", "-", "*","/","+", "-", "*","/"];
-
+//atliekame skaiciavimus
 // console.log(math);
 let sum =nums[0];
 nums = nums.map(Number);
