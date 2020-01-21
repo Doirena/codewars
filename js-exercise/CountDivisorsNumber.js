@@ -7,34 +7,25 @@ function test( t1, t2 ) {
     }
 }
 
-// function getDivisorsCnt(n){
-//     let div=0;
-//    for (let i = 1; i <= n; i++) {      
-//      if(n % i === 0){
-//          div++;
-//      }
+function getDivisorsCnt(n){
+    let div=0;
+   for (let i = 1; i <= n; i++) {      
+     if(n % i === 0){
+         div++;
+     }
        
-//    }
+   }
    
-//  return div;  
-// }
+ return div;  
+}
 
-// test(getDivisorsCnt(1) , 1);
-// test(getDivisorsCnt(10) , 4);
-// test(getDivisorsCnt(11) , 2);
-// test(getDivisorsCnt(54) , 8);
+test(getDivisorsCnt(1) , 1);
+test(getDivisorsCnt(10) , 4);
+test(getDivisorsCnt(11) , 2);
+test(getDivisorsCnt(54) , 8);
 
 
-// "use strict";
-// function test( t1, t2 ) {
-//     const first = t1.toString();   
-//     const second = t2.toString();
-//     if ( first === second ) {
-//         console.log(true)
-//     } else {
-//         console.log(false);
-//     }
-// }
+
 
 // function stringToNumber (str){
      
@@ -85,3 +76,4 @@ function test( t1, t2 ) {
 //     abc = abc.slice(0, count * -1);
 //     console.log(abc+str);
 // }
+ 
